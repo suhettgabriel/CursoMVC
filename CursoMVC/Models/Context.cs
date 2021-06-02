@@ -11,7 +11,7 @@ namespace CursoMVC
         public DbSet<Categoria> Categorias { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString: @"Server=(localdb)\mssqllocaldb;Database=Cursomvc;Integrate Security=true");
+            optionsBuilder.UseSqlServer(connectionString: @"Server=NT000645;Database=cursoMvc;Integrated Security=true");
         }
     }
 }
